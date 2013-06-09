@@ -99,16 +99,16 @@ class Util
     public static function cleanClassName($name)
     {
         $classNamesToResponseKeys = array(
-            'CreditCard' => 'creditCard',
-            'Customer' => 'customer',
-            'Subscription' => 'subscription',
-            'Transaction' => 'transaction',
-            'CreditCardVerification' => 'verification',
-            'AddOn' => 'addOn',
-            'Discount' => 'discount',
-            'Plan' => 'plan',
-            'Address' => 'address',
-            'SettlementBatchSummary' => 'settlementBatchSummary'
+            'Braintree\CreditCard' => 'creditCard',
+            'Braintree\Customer' => 'customer',
+            'Braintree\Subscription' => 'subscription',
+            'Braintree\Transaction' => 'transaction',
+            'Braintree\CreditCardVerification' => 'verification',
+            'Braintree\AddOn' => 'addOn',
+            'Braintree\Discount' => 'discount',
+            'Braintree\Plan' => 'plan',
+            'Braintree\Address' => 'address',
+            'Braintree\SettlementBatchSummary' => 'settlementBatchSummary'
         );
 
         $name = str_replace('', '', $name);
